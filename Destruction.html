@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capable of healing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="logo-link">
+        <img
+          src="image/COMM2754-2026-S1-A3w12-StrawberrySweets-Logo.png"
+          alt="Logo"
+        />
+      </a>
+
+      <!-- Hamburger / Close Icon Toggle Button -->
+      <button class="menu-toggle" onclick="toggleMobileMenu()">
+        <img
+          src="image/COMM2754-2026-S1-A3w12-StrawberrySweets-menu.png"
+          alt="Toggle Menu"
+          id="menuToggleImg"
+        />
+      </button>
+
+      <!-- Navigation Links Main Wrapper Box Container -->
+      <div class="nav-links" id="navLinksMenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+
+        <!-- Works Dropdown Center Content Alignment -->
+        <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction(event)">Works</button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="destruction.html">Destruction</a>
+            <a href="harmony.html">Harmony</a>
+          </div>
+        </div>
+
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="destruction">
+      <div class="destruction-container">
+        <div class="destruction-title">
+          <h1>Destruction</h1>
+        </div>
+      </div>
+      <div class="destruction-description">
+        <p>Team: Strawberry Sweets</p>
+        <p>Generative art made by: Nguyen Ngoc Kim Ngan</p>
+      </div>
+
+      <div id="sketch"></div>
+      <div class="audio-panel">
+        <button id="mute-btn" class="audio-btn">Mute</button>
+        <div class="slider-container" id="volume-slider">
+          <img
+            src="image/COMM2754-2026-S1-A3w12-StrawberrySweets-volume-slider.png"
+            alt="Volume Slider Track"
+            class="slider-bg"
+          />
+          <img
+            src="image/COMM2754-2026-S1-A3w12-StrawberrySweets-circle-indicator.png"
+            alt="Volume Handle"
+            class="slider-thumb"
+            id="slider-thumb"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="tag-list">
+          <span># RMIT University Vietnam</span>
+          <span># Saigon South Campus</span>
+          <span># School of Communication and Design</span>
+          <div class="tag-list1">
+            <span># Digital Media Program</span>
+            <span># COMM2754</span>
+            <span># Digital Media Specialisation 1 2026</span>
+          </div>
+        </div>
+        <div class="date-tag"># Date: 22 May 2026</div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+    <script src="script.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
